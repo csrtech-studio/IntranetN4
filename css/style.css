@@ -1,0 +1,392 @@
+/* Colores personalizados */
+:root {
+    --primary-color: #363636;
+    --secondary-color: #5c5c5c;
+    --accent-color: #5338eb;
+    --text-color: #f5f5f5;
+    --background-color: #142662;
+    --background-image-url: url(https://www.jadeglobal.com/sites/default/files/2022-09/How-Cloud-Computing-Can-Provide-Competitive-Advantage-for-Scientific-and-Industrial-Computation.jpg);
+    --transparent-bg: var(--transparent-bg);
+    
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: var(--background-image-url);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden; 
+}
+
+p {
+    text-align: start;
+    padding: 20px;
+    color: var(--text-color);
+    bottom: 0;
+    width: 90%;
+
+}
+
+
+.pdf {
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 0; /* Aumenta la altura de línea para más espacio vertical */
+    padding-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 5px;
+    color: var(--text-color);
+    position: absolute;
+    bottom: 1;
+    width: 25%;
+    font-size: 24px; /* Tamaño de la letra */
+    font-weight: bold; /* Opcional, para hacerlo en negrita */
+}
+
+
+/* Contenedor principal */
+.content-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; 
+    
+}
+
+button {
+    color: #fff; /* Texto blanco */
+    margin-right: 15%;
+    background-color: #142662; /* Fondo azul oscuro */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 12px 24px; /* Relleno para hacer el botón más grande */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor a una mano cuando pasa sobre el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efectos de transición para un suave cambio de color y movimiento */
+}
+
+/* Efecto cuando el cursor pasa sobre el botón */
+button:hover {
+    background-color: #1c024d; /* Cambia el fondo a verde */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Efecto cuando el botón es presionado */
+button:active {
+    background-color: #35046d; /* Fondo verde oscuro al presionar */
+    transform: scale(0.98); /* Hace que el botón se reduzca ligeramente */
+}
+
+/* Opcional: Sombra para hacer que el botón se destaque */
+button:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 0 0 10px rgba(99, 171, 204, 0.7); /* Sombra verde */
+}
+
+
+/* Sidebar (menú) */
+.sidebar {
+    width: 40%;
+    background-color: var(--transparent-bg); /* Transparencia en el fondo */
+    padding: 10px;
+    color: #35046d;
+    overflow-y: auto;
+    margin-top: 150px; /* Ajusta este valor según lo que necesites */
+}
+
+
+.nav li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+    color: var(--accent-color);
+}
+
+/* Contenido principal */
+#mainContent {
+    display: flex;
+    flex-direction: column; /* Para apilar los elementos uno debajo del otro */
+    width: 100%;
+    
+    padding: 0; /* Eliminar cualquier padding */
+    margin: 0; /* Eliminar márgenes */
+    background-color: var(--transparent-bg); /* Transparencia en el fondo */
+    color: var(--text-color);
+    overflow-y: auto;
+    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+}
+
+#mainContentpdf {
+    display: flex;
+    flex-direction: column; /* Para apilar los elementos uno debajo del otro */
+    width: 140%;
+    
+    padding: 0; /* Eliminar cualquier padding */
+    margin: 0; /* Eliminar márgenes */
+    background-color: var(--transparent-bg); /* Transparencia en el fondo */
+    color: var(--text-color);
+    overflow-y: auto;
+    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+}
+
+
+
+/* Estilo de los anuncios */
+#newsContainer {
+    padding: 15px;
+    background-color: transparent; /* Transparencia en el fondo de los anuncios */
+    color: var(--text-color);
+    border-radius: 8px;
+    flex-grow: 0; /* Ocupa el espacio restante */
+    margin-top: 20px; /* Esto puede ser ajustado si es necesario */
+}
+
+/* Estilo de los anuncios individuales */
+.news-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(1, 25, 56, 0.5);/* Transparencia para cada anuncio */
+    
+    
+}
+
+.news-item h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.news-item p {
+    margin: 5px 0;
+}
+
+.news-item img {
+    max-width: 50%; /* Ajuste para que las imágenes no se desborden */
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    position: absolute;
+    bottom: 0;
+    margin-top: 0%;
+    width: 22.5%;
+    height: 10%;
+    background-color: rgba(20, 2, 53, 0.7); /* Pie de página con fondo transparente */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a una nueva fila si no caben */
+    gap: 10px; /* Reducido el espacio entre los inputs */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    margin: 0 auto;
+}
+
+/* Estilo para los labels */
+form label {
+    font-weight: bold;
+    color: #f8f3f3;
+    width: 120px; /* Ajustamos el tamaño del label */
+    margin-top: 5px; /* Reducido margen superior */
+    margin-left: 2px; /* Añadido margen a la derecha para separar del input */
+}
+
+/* Estilo para los inputs */
+form input[type="text"],
+form input[type="date"] {
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 0.85em; /* Reducido el tamaño de la fuente */
+    height: 50%;
+    width: 120px; /* Hacemos los inputs más pequeños */
+    margin-top: 1px;
+}
+
+/* Estilo para los botones */
+form button {
+    margin-left: 120px;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #2b0388;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 100; /* Centra la tabla */
+    margin-right: auto; /* Centra la tabla */
+    border-collapse: collapse;
+}
+
+/* Style for table header */
+table thead {
+    background-color: #2b0388;
+    color: white;   
+}
+
+/* Style for table cells */
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #19a1e0;
+}
+
+/* Bold header text */
+table th {
+    font-weight: bold;
+}
+
+/* Hover effect for table rows */
+table tbody tr:hover {
+    background-color: rgba(67, 211, 10, 0.5); /* Semitransparente */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    form label, form input[type="text"], form input[type="date"], form button {
+        font-size: 0.9em;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}
+
+.unique-action-btn {
+    font-size: 0.9em;          /* Tamaño de texto del botón */
+    padding: 5px 12px;         /* Espaciado para ajustar el tamaño */
+    background-color: #2b0388; /* Color de fondo específico */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.unique-action-btn:hover {
+    background-color: #1106b6; /* Color de fondo al pasar el mouse */
+}
+
+
+
+#newsForm label {
+    display: block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#newsForm input[type="text"]{
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 0.85em; /* Reducido el tamaño de la fuente */
+    height: 50%;
+    width: 300px; /* Hacemos los inputs más pequeños */
+    margin-right: 100px;
+}
+
+#newsForm select{
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 0.85em; /* Reducido el tamaño de la fuente */
+    height: 60%;
+    width: 120px; /* Hacemos los inputs más pequeños */
+    margin-top: 1px;
+}
+
+#newsForm input[type="url"]{
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 0.85em; /* Reducido el tamaño de la fuente */
+    height: 100%;
+    width: 250px; /* Hacemos los inputs más pequeños */
+    margin-top: 1px;
+}
+
+#newsForm textarea {
+    padding: 8px;             /* Aumentamos el espacio interno */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;           /* Tamaño de fuente normal */
+    height: 150px;            /* Aumentamos la altura */
+    width: 30%;              /* Ocupa todo el ancho disponible */
+    margin-top: 10px;         /* Separación superior */
+    resize: vertical;         /* Permitir cambiar altura, pero no el ancho */
+}
+
+
+
+#newsForm button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 50%;       /* Ancho deseado */
+    margin: 10px auto; /* Centra el botón */
+}
+
+
+#newsForm button:hover {
+    background-color: #218838;
+}
+
+#dateContainer {
+    margin-top: 5px;  /* Separar la fecha de los anuncios */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+#dateContainer p {
+    margin: 0;
+    padding: 10px;
+    border-radius: 4px;
+}

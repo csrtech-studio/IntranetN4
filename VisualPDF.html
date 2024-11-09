@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet N4 - Ayuda</title>
+    <link rel="icon" href="Img/n4.ico" type="image/n4-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><p class="title">Intranet N4</p></a>
+        <button id="showLinksBtn" class="btn">Menú</button>
+    </header>
+
+    <div class="content-container">
+        <!-- Sidebar con el menú -->
+        <aside class="sidebar">
+            <ul id="navLinks" class="nav">
+                <li><a href="registroUsuario.html">Registro de usuario</a></li>
+                <li><a href="VisualPDS.html">Método de preparación PDS</a></li>
+                <li><a href="VisualPDF.html">Ayuda visual PDF</a></li>
+                <li><a href="registroOrden.html">Registro de orden de preparación</a></li>
+                <li><a href="admin.html">Administrador</a></li>
+                <li><a href="#" id="logoutBtn">Salir</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main id="mainContentpdf">
+            <h2>Bienvenido a la Intranet N4</h2>
+            
+            <p class="pdf">Haz clic en el siguiente enlace para descargar el PDF:</p>
+            <p class="pdf"><a href="Img/Ayuda.pdf" download>Descargar PDF de Ayuda</a></p>
+            
+            <!-- Visor PDF integrado -->
+            <div>
+                <embed src="Img/Ayuda.pdf" type="application/pdf" width="95%" height="500px"  />
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p><a href="http://www.kentek.com.mx/Index.html" class="btn">Kentek &raquo;</a></p>
+    </footer>
+
+   
+    <script type="module" src="js/firebaseConfig.js"></script> <!-- Este archivo debe cargarse primero -->
+    <script type="module" src="js/main.js"></script>
+ 
+</body>
+</html>

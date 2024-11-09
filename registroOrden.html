@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet N4 - Ordenes</title>
+    <link rel="icon" href="Img/n4.ico" type="image/n4-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><p class="title">Intranet N4</p></a>
+        <button id="showLinksBtn" class="btn">Menú</button>
+    </header>
+
+    <div class="content-container">
+        <!-- Sidebar con el menú -->
+        <aside class="sidebar">
+            <ul id="navLinks" class="nav">
+                <li><a href="registroUsuario.html">Registro de usuario</a></li>
+                <li><a href="VisualPDS.html">Método de preparación PDS</a></li>
+                <li><a href="VisualPDF.html">Ayuda visual PDF</a></li>
+                <li><a href="registroOrden.html">Registro de orden de preparación</a></li>
+                <li><a href="admin.html">Administrador</a></li>
+                <li><a href="#" id="logoutBtn">Salir</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal con el formulario y la tabla -->
+        <main>
+            <h2>Registrar Orden de Preparación</h2>
+            <form id="orderForm">
+                <label for="empleado"># Empleado:</label>
+                <input type="text" id="empleado" required>
+                <label for="orden">Orden:</label>
+                <input type="text" id="orden" required>
+                <label for="numParte">Número de Parte:</label>
+                <input type="text" id="numParte" required>
+                <label for="planta">Planta:</label>
+                <input type="text" id="planta" required>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" required>
+                <button type="submit">Cargar Registro</button>
+            </form>
+            <table id="orderTable">
+                <thead>
+                    <tr>
+                        <th># Empleado</th>
+                        <th>Orden</th>
+                        <th>Número de Parte</th>
+                        <th>Planta</th>
+                        <th>Fecha</th>
+                        <th>Accion</th>
+                        <th>Boton</th>
+                    </tr>
+                </thead>
+                <tbody></tbody> <!-- Aquí se agregarán las filas -->
+            </table>
+        </main>
+    </div>
+
+    <footer>
+        <p><a href="http://www.kentek.com.mx/Index.html" class="btn">Kentek &raquo;</a></p>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script type="module" src="js/firebaseConfig.js"></script> <!-- Este archivo debe cargarse primero -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/registroOrden.js"></script> <!-- Asegúrate de que este archivo maneje la lógica de registro de órdenes -->
+</body>
+</html>

@@ -1,0 +1,89 @@
+﻿
+
+#newsForm {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#newsForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#newsForm input[type="text"],
+#newsForm input[type="url"],
+#newsForm select,
+#newsForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#newsForm button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#newsForm button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para la tabla de noticias */
+#newsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#newsTable th,
+#newsTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#newsTable th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#newsTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Botón único de acciones en la tabla */
+.unique-action-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.unique-action-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+}
